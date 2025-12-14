@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ডাঃ আব্বাস উদ্দিন - ডায়াবেটিস ও অ্যাজমা বিশেষজ্ঞ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2C7865;
+            --secondary: #004445;
+            --accent: #FF9A00;
+            --light: #F8F5E4;
+            --dark: #1A3C34;
+            --success: #4CAF50;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --whatsapp: #25D366;
+            --facebook: #3b5998;
+            --emergency: #FF4444;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--dark);
+            line-height: 1.7;
+            background-color: var(--light);
+            overflow-x: hidden;
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        .bengali-text {
+            font-family: 'Noto Sans Bengali', sans-serif;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(44, 120, 101, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(44, 120, 101, 0.4);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, var(--whatsapp), #128C7E);
+        }
+
+        .btn-facebook {
+            background: linear-gradient(135deg, var(--facebook), #2d4373);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo .subtitle {
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(44, 120, 101, 0.9), rgba(0, 68, 69, 0.9)), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 180px 0 100px;
+            margin-top: 70px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .hero .specialty {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .serial-number {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            border: 2px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .serial-number:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .serial-number span {
+            font-size: 1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(135deg, var(--whatsapp), #128C7E);
+        }
+
+        .facebook-btn {
+            background: linear-gradient(135deg, var(--facebook), #2d4373);
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .doctor-img {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transform: rotate(-2deg);
+            transition: transform 0.5s ease;
+        }
+
+        .doctor-img:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .doctor-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .doctor-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .doctor-info {
+            flex: 1;
+        }
+
+        .doctor-info h3 {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .doctor-info h3:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        .qualifications {
+            margin-top: 25px;
+        }
+
+        .qualifications ul {
+            list-style-type: none;
+        }
+
+        .qualifications li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .qualifications li:before {
+            content: "✓";
+            color: var(--success);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .specialization {
+            background: linear-gradient(135deg, rgba(44, 120, 101, 0.1), rgba(255, 154, 0, 0.1));
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            border-left: 4px solid var(--accent);
+        }
+
+        /* Services Section */
+        .services {
+            background: linear-gradient(135deg, #e8f4f1, #d4e8e2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            padding: 35px 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.4s ease;
+            border-top: 4px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            background: rgba(44, 120, 101, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: rotate(360deg) scale(1.1);
+            background: rgba(44, 120, 101, 0.2);
+        }
+
+        /* Chambers Section */
+        .chambers-section {
+            background-color: var(--white);
+        }
+
+        .chambers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin-top: 40px;
+        }
+
+        .chamber-card {
+            background: linear-gradient(135deg, #f8f5e4, #f0ede0);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            border-top: 4px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chamber-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .location-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .chamber-title {
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+        }
+
+        .chamber-title i {
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        .chamber-address {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #ddd;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .chamber-schedule {
+            background: linear-gradient(135deg, rgba(44, 120, 101, 0.1), rgba(255, 154, 0, 0.05));
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .schedule-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .day {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .time {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Appointment Section */
+        .appointment {
+            background: linear-gradient(135deg, #f5f9f8, #e8f0ed);
+        }
+
+        .appointment-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .appointment-info {
+            flex: 1;
+        }
+
+        .appointment-form {
+            flex: 1;
+            background: linear-gradient(135deg, var(--white), #f5f9f8);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(44, 120, 101, 0.2);
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+        }
+
+        .contact .section-title {
+            color: var(--white);
+        }
+
+        .contact .section-title:after {
+            background: linear-gradient(to right, var(--accent), #FFD166);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            background-color: var(--accent);
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .social-contact {
+            flex: 1;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .social-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 35px 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .social-card:hover .social-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .whatsapp-icon {
+            color: var(--whatsapp);
+        }
+
+        .facebook-icon {
+            color: var(--white);
+        }
+
+        .social-card h3 {
+            margin-bottom: 20px;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .social-card p {
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-logo {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .footer-logo h2 {
+            color: var(--white);
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--accent), #FFD166);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+        }
+
+        .footer-logo p {
+            color: #ccc;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-contact {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-links h3, .footer-contact h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-links h3:after, .footer-contact h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            bottom: -8px;
+            left: 0;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            padding: 5px 0;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .footer-contact p {
+            margin-bottom: 15px;
+            color: #ccc;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact p i {
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Watermark */
+        .watermark {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .watermark strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--whatsapp), #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content, .appointment-container, .contact-container {
+                flex-direction: column;
+            }
+            
+            .doctor-img, .doctor-info, .appointment-info, .appointment-form, .contact-info, .social-contact {
+                width: 100%;
+            }
+
+            .chambers-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .footer-logo, .footer-links, .footer-contact {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                text-align: center;
+                box-shadow: var(--shadow);
+                padding: 20px 0;
+                border-radius: 0 0 15px 15px;
+                z-index: 1001;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0;
+                padding: 15px 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero .specialty {
+                font-size: 1.4rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .serial-number {
+                font-size: 1.6rem;
+                padding: 12px 25px;
+            }
+
+            .floating-whatsapp {
+                bottom: 25px;
+                right: 25px;
+                width: 60px;
+                height: 60px;
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 140px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .specialty {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .service-card, .chamber-card, .social-card {
+                padding: 25px 20px;
+            }
+
+            .appointment-form {
+                padding: 30px 20px;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .slide-up {
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(44, 120, 101, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(44, 120, 101, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(44, 120, 101, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1 class="bengali-text">ডাঃ আব্বাস উদ্দিন</h1>
+                    <div class="subtitle bengali-text">ডায়াবেটিস ও অ্যাজমা বিশেষজ্ঞ</div>
+                </div>
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#about">পরিচিতি</a></li>
+                    <li><a href="#services">সেবাসমূহ</a></li>
+                    <li><a href="#chambers">চেম্বার</a></li>
+                    <li><a href="#appointment">সিরিয়াল</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="bengali-text slide-up">ডাঃ আব্বাস উদ্দিন</h1>
+            <div class="specialty bengali-text slide-up">ডায়াবেটিস ও অ্যাজমা বিশেষজ্ঞ</div>
+            <p class="bengali-text slide-up">এম.বি.বি.এস (ঢাকা), এম.ডি (মেডিসিন) বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়<br>
+            সি.সি.ডি (বারডেম), সি.সি.সি.ডি (হার্ট ফাউন্ডেশন) ডি-এ্যাজমা (ঢাকা), সি-আল্ট্রা (ঢা.বি)<br>
+            সার্টিফাইড হৃদরোগ চিকিৎসক<br>
+            প্রধান মেডিকেল নির্বাহী, এসবিডিএ মেডিকেল কেয়ার</p>
+            
+            <div class="serial-number slide-up">
+                +880 1716-681573
+                <span class="bengali-text">সিরিয়ালের জন্য কল করুন</span>
+            </div>
+            
+            <a href="#appointment" class="btn bengali-text slide-up pulse">অনলাইন সিরিয়াল নিন</a>
+            
+            <div class="social-buttons slide-up">
+                <a href="https://wa.me/8801716681573" class="social-btn whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="bengali-text">হোয়াটসঅ্যাপে সিরিয়াল</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61581953107740" class="social-btn facebook-btn" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="bengali-text">ফেসবুক প্রোফাইল</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title bengali-text fade-in">ডাক্তারের পরিচিতি</h2>
+            <div class="about-content">
+                <div class="doctor-img slide-up">
+                    <img src="https://i.ibb.co.com/WWrsNxyz/1765380862715.jpg" alt="ডাঃ আব্বাস উদ্দিন">
+                </div>
+                <div class="doctor-info">
+                    <h3 class="bengali-text slide-up">পেশাগত পরিচিতি</h3>
+                    <p class="bengali-text slide-up">ডাঃ আব্বাস উদ্দিন একজন অভিজ্ঞ ডায়াবেটিস ও অ্যাজমা বিশেষজ্ঞ যিনি বহু বছর ধরে বাংলাদেশের শীর্ষস্থানীয় হাসপাতাল ও মেডিকেল সেন্টারে তার দক্ষতা প্রদর্শন করে চলেছেন।</p>
+                    
+                    <div class="qualifications slide-up">
+                        <h3 class="bengali-text">শিক্ষাগত যোগ্যতা ও প্রশিক্ষণ</h3>
+                        <ul>
+                            <li class="bengali-text">এম.বি.বি.এস (ঢাকা মেডিকেল কলেজ)</li>
+                            <li class="bengali-text">এম.ডি (মেডিসিন) - বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়</li>
+                            <li class="bengali-text">সি.সি.ডি (বারডেম)</li>
+                            <li class="bengali-text">সি.সি.সি.ডি (হার্ট ফাউন্ডেশন হাসপাতাল)</li>
+                            <li class="bengali-text">ডি-এ্যাজমা (ঢাকা)</li>
+                            <li class="bengali-text">সি-আল্ট্রাসনোগ্রাফি (ঢাকা বিশ্ববিদ্যালয়)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="specialization slide-up">
+                        <h3 class="bengali-text">বিশেষজ্ঞতা</h3>
+                        <p class="bengali-text">ডাঃ আব্বাস উদ্দিন ডায়াবেটিস, অ্যাজমা ও হৃদরোগের চিকিৎসায় বিশেষ দক্ষতা অর্জন করেছেন। তিনি এসবিডিএ মেডিকেল কেয়ারের প্রধান মেডিকেল নির্বাহী হিসেবে দায়িত্ব পালন করছেন।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title bengali-text fade-in">বিশেষজ্ঞ সেবাসমূহ</h2>
+            <div class="services-grid">
+                <div class="service-card slide-up">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="bengali-text">ডায়াবেটিস চিকিৎসা</h3>
+                    <p class="bengali-text">টাইপ-১ ও টাইপ-২ ডায়াবেটিসের সমন্বিত চিকিৎসা, ইনসুলিন থেরাপি, ডায়াবেটিক জটিলতা প্রতিরোধ ও ব্যবস্থাপনা।</p>
+                </div>
+                <div class="service-card slide-up">
+                    <div class="service-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3 class="bengali-text">অ্যাজমা ব্যবস্থাপনা</h3>
+                    <p class="bengali-text">ব্রঙ্কিয়াল অ্যাজমার আধুনিক চিকিৎসা, স্পাইরোমেট্রি টেস্ট, অ্যালার্জি টেস্টিং এবং দীর্ঘমেয়াদী ব্যবস্থাপনা পরিকল্পনা।</p>
+                </div>
+                <div class="service-card slide-up">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="bengali-text">হৃদরোগ চিকিৎসা</h3>
+                    <p class="bengali-text">হৃদরোগের প্রতিরোধ, শনাক্তকরণ ও চিকিৎসা, ইসিজি, ইকোকার্ডিওগ্রাফি এবং কার্ডিয়াক রিহ্যাবিলিটেশন।</p>
+                </div>
+                <div class="service-card slide-up">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 class="bengali-text">সাধারণ পরামর্শ</h3>
+                    <p class="bengali-text">রোগ নির্ণয়, স্বাস্থ্য পরীক্ষা, ওষুধ ব্যবস্থাপনা এবং ব্যক্তিগতকৃত স্বাস্থ্য পরিকল্পনা প্রদান।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chambers Section -->
+    <section id="chambers" class="chambers-section">
+        <div class="container">
+            <h2 class="section-title bengali-text fade-in">চেম্বার ও সময়সূচি</h2>
+            
+            <h3 class="bengali-text" style="text-align: center; margin-bottom: 30px; color: var(--primary);">
+                <i class="fas fa-map-marker-alt"></i> নোয়াখালী চেম্বার
+            </h3>
+            
+            <div class="chambers-container">
+                <div class="chamber-card slide-up">
+                    <div class="location-badge bengali-text">নোয়াখালী</div>
+                    <h4 class="chamber-title bengali-text">
+                        <i class="fas fa-hospital"></i> চেম্বার ১
+                    </h4>
+                    <div class="chamber-address bengali-text">
+                        চাটখিল স্কয়ার হাসপাতাল<br>
+                        ৪ বদলকোট রোড, চাটখিল, নোয়াখালী
+                    </div>
+                    <div class="chamber-schedule">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">প্রতি শুক্রবার</div>
+                            <div class="time bengali-text">সকাল ১০টা - বিকাল ৩টা</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chamber-card slide-up">
+                    <div class="location-badge bengali-text">নোয়াখালী</div>
+                    <h4 class="chamber-title bengali-text">
+                        <i class="fas fa-clinic-medical"></i> চেম্বার ২
+                    </h4>
+                    <div class="chamber-address bengali-text">
+                        মেডিসিন- ডায়াবেটিস অ্যাজমা সেন্টার<br>
+                        ৪ ইসলামপুর বাজার (মুরাইম) চাটখিল, নোয়াখালী
+                    </div>
+                    <div class="chamber-schedule">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">প্রতি শুক্রবার</div>
+                            <div class="time bengali-text">বিকাল ৪টা - সন্ধ্যা ৬টা</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="bengali-text" style="text-align: center; margin: 50px 0 30px; color: var(--primary);">
+                <i class="fas fa-city"></i> ঢাকা চেম্বার
+            </h3>
+            
+            <div class="chambers-container">
+                <div class="chamber-card slide-up">
+                    <div class="location-badge bengali-text">ঢাকা</div>
+                    <h4 class="chamber-title bengali-text">
+                        <i class="fas fa-hospital-alt"></i> চেম্বার ১
+                    </h4>
+                    <div class="chamber-address bengali-text">
+                        ডেলটা মেডিকেল কলেজ হাসপাতাল<br>
+                        ৪ মিরপুর ১, ঢাকা ১২১৬
+                    </div>
+                    <div class="chamber-schedule">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">সোম, বুধ ও বৃহস্পতিবার</div>
+                            <div class="time bengali-text">বিকাল ৩টা - ৬টা</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chamber-card slide-up">
+                    <div class="location-badge bengali-text">ঢাকা</div>
+                    <h4 class="chamber-title bengali-text">
+                        <i class="fas fa-pharmacy"></i> চেম্বার ২
+                    </h4>
+                    <div class="chamber-address bengali-text">
+                        ফাতেমা ফার্মেসী<br>
+                        ৩৬/২, শালী বাগ, ধানক্ষেত্র মোড়, মিরপুর-১, ঢাকা-১২১৬
+                    </div>
+                    <div class="chamber-schedule">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">রবি থেকে বৃহস্পতিবার</div>
+                            <div class="time bengali-text">রাত ৯টা - ১১টা</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2 class="section-title bengali-text fade-in">অনলাইন সিরিয়াল নিন</h2>
+            <div class="appointment-container">
+                <div class="appointment-info slide-up">
+                    <h3 class="bengali-text">সিরিয়াল নেওয়ার পদ্ধতি</h3>
+                    <p class="bengali-text">সিরিয়াল নেওয়ার জন্য নিচের যেকোনো একটি পদ্ধতি অনুসরণ করুন:</p>
+                    
+                    <div class="chamber-schedule" style="margin-top: 20px;">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">১. ফোন কল</div>
+                            <div class="time">+880 1716-681573</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="day bengali-text">২. হোয়াটসঅ্যাপ</div>
+                            <div class="time bengali-text">নাম, সমস্যা ও তারিখ লিখে</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="day bengali-text">৩. অনলাইন ফর্ম</div>
+                            <div class="time bengali-text">নিচের ফর্মটি পূরণ করুন</div>
+                        </div>
+                    </div>
+
+                    <h3 class="bengali-text" style="margin-top: 40px;">সিরিয়াল ফি</h3>
+                    <div class="chamber-schedule">
+                        <div class="schedule-item">
+                            <div class="day bengali-text">নতুন রোগী</div>
+                            <div class="time">১০০০ টাকা</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="day bengali-text">পুরাতন রোগী</div>
+                            <div class="time">৭০০ টাকা</div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="day bengali-text">ফলোআপ</div>
+                            <div class="time">৫০০ টাকা</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="appointment-form slide-up">
+                    <h3 class="bengali-text">অনলাইন সিরিয়াল ফর্ম</h3>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name" class="bengali-text">পুরো নাম</label>
+                            <input type="text" id="name" class="form-control" required placeholder="আপনার সম্পূর্ণ নাম">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="bengali-text">ফোন নম্বর</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="01XXXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="bengali-text">পছন্দের চেম্বার</label>
+                            <select id="location" class="form-control" required>
+                                <option value="" class="bengali-text">চেম্বার নির্বাচন করুন</option>
+                                <option value="chatkhil1" class="bengali-text">চাটখিল স্কয়ার হাসপাতাল</option>
+                                <option value="chatkhil2" class="bengali-text">মেডিসিন- ডায়াবেটিস অ্যাজমা সেন্টার</option>
+                                <option value="dhaka1" class="bengali-text">ডেলটা মেডিকেল কলেজ হাসপাতাল</option>
+                                <option value="dhaka2" class="bengali-text">ফাতেমা ফার্মেসী, মিরপুর</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="problem" class="bengali-text">মুখ্য সমস্যা</label>
+                            <textarea id="problem" class="form-control" placeholder="আপনার সমস্যা সংক্ষেপে লিখুন"></textarea>
+                        </div>
+                        <button type="submit" class="btn bengali-text" style="width: 100%;">সিরিয়াল কনফার্ম করুন</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title bengali-text fade-in">যোগাযোগ করুন</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="bengali-text slide-up">যোগাযোগের তথ্য</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item slide-up">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="bengali-text">সিরিয়ালের জন্য কল</h4>
+                                <p>+880 1716-681573</p>
+                            </div>
+                        </div>
+                        <div class="contact-item slide-up">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="bengali-text">কর্মঘণ্টা</h4>
+                                <p class="bengali-text">সকাল ৯:০০ - রাত ১১:০০<br>শুক্রবার সকাল ৯:০০ - রাত ১০:০০</p>
+                            </div>
+                        </div>
+                        <div class="contact-item slide-up">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="bengali-text">জরুরী যোগাযোগ</h4>
+                                <p class="bengali-text">যেকোনো জরুরী অবস্থায় সরাসরি ফোন করুন</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-contact">
+                    <h3 class="bengali-text slide-up">সোশ্যাল মিডিয়ায় যুক্ত হোন</h3>
+                    <div class="social-grid">
+                        <div class="social-card slide-up">
+                            <div class="social-icon whatsapp-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3 class="bengali-text">হোয়াটসঅ্যাপ</h3>
+                            <p class="bengali-text">প্রেসক্রিপশন, রিপোর্ট ও ফলোআপের জন্য হোয়াটসঅ্যাপে যোগাযোগ করুন</p>
+                            <a href="https://wa.me/8801716681573" class="btn btn-whatsapp bengali-text" target="_blank">
+                                <i class="fab fa-whatsapp"></i> হোয়াটসঅ্যাপে মেসেজ
+                            </a>
+                        </div>
+                        <div class="social-card slide-up">
+                            <div class="social-icon facebook-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <h3 class="bengali-text">ফেসবুক</h3>
+                            <p class="bengali-text">স্বাস্থ্য টিপস ও আপডেটের জন্য ফেসবুক প্রোফাইল ফলো করুন</p>
+                            <a href="https://www.facebook.com/profile.php?id=61581953107740" class="btn btn-facebook bengali-text" target="_blank">
+                                <i class="fab fa-facebook-f"></i> ফেসবুক প্রোফাইল
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="bengali-text">ডাঃ আব্বাস উদ্দিন</h2>
+                    <p class="bengali-text">ডায়াবেটিস ও অ্যাজমা বিশেষজ্ঞ, সার্টিফাইড হৃদরোগ চিকিৎসক। যেকোনো স্বাস্থ্য সমস্যার জন্য বিশেষজ্ঞ পরামর্শ নিন।</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61581953107740" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/8801716681573" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+8801716681573" target="_blank">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="bengali-text">দ্রুত লিংক</h3>
+                    <ul>
+                        <li><a href="#home" class="bengali-text">হোম</a></li>
+                        <li><a href="#about" class="bengali-text">পরিচিতি</a></li>
+                        <li><a href="#services" class="bengali-text">সেবাসমূহ</a></li>
+                        <li><a href="#chambers" class="bengali-text">চেম্বার</a></li>
+                        <li><a href="#appointment" class="bengali-text">সিরিয়াল</a></li>
+                        <li><a href="#contact" class="bengali-text">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="bengali-text">যোগাযোগ তথ্য</h3>
+                    <p><i class="fas fa-phone"></i> +880 1716-681573</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span class="bengali-text">নোয়াখালী ও ঢাকা চেম্বার</span></p>
+                    <p><i class="fas fa-clock"></i> <span class="bengali-text">শুক্রবার ছাড়া প্রতিদিন</span></p>
+                    <p><i class="fas fa-envelope"></i> dr.abbasuddin@example.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; ২০২৩ ডাঃ আব্বাস উদ্দিন। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+            <div class="watermark">
+                <p>Design & Developed by <strong>Alamin</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801716681573" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('nav-menu').classList.remove('show');
+            });
+        });
+
+        // Appointment Form Submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const location = document.getElementById('location').value;
+            const problem = document.getElementById('problem').value;
+            
+            // Create WhatsApp message
+            const message = `সিরিয়াল রিকোয়েস্ট:\n\nনাম: ${name}\nফোন: ${phone}\nচেম্বার: ${location}\nসমস্যা: ${problem}`;
+            
+            // Encode message for WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/8801716681573?text=${encodedMessage}`, '_blank');
+            
+            // Reset form
+            this.reset();
+            
+            // Show confirmation
+            alert('ধন্যবাদ! আপনার সিরিয়াল রিকোয়েস্ট পাঠানো হয়েছে। ডাক্তার আপনাকে শীঘ্রই ফোন দিবেন।');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    entry.target.classList.add('slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('section, .service-card, .chamber-card, .social-card, .contact-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
